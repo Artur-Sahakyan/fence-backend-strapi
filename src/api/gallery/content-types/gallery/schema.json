@@ -1,0 +1,47 @@
+{
+  "kind": "collectionType",
+  "collectionName": "galleries",
+  "info": {
+    "singularName": "gallery",
+    "pluralName": "galleries",
+    "displayName": "Gallery"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "type": {
+      "type": "enumeration",
+      "default": "vinyl",
+      "enum": [
+        "wood",
+        "metal",
+        "vinyl",
+        "composite",
+        "chain-link",
+        "other"
+      ]
+    },
+    "location": {
+      "type": "string"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  }
+}
