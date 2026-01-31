@@ -12,6 +12,8 @@ export interface AdminApiToken extends Struct.CollectionTypeSchema {
   options: {
     draftAndPublish: false;
   };
+
+  
   pluginOptions: {
     'content-manager': {
       visible: false;
